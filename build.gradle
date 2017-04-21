@@ -3,3 +3,11 @@ apply plugin: 'idea'
 
 project.version = "1.0.0-SNAPSHOT"
 project.group = 'com.codingchili'
+
+repositories {
+    maven { url 'http://repo.maven.apache.org/maven2' }
+}
+
+dependencies {
+    compile group: 'io.vertx', name: 'vertx-core', version: '3.4.1'
+}
